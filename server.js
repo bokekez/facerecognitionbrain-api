@@ -13,6 +13,8 @@ const knex = require('knex');
 // const profile = require('./controllers/profile');
 // const image = require('./controllers/image');
 
+res.header("Access-Control-Allow-Origin: *");
+
 const db = knex({
   client: 'pg',
   connection: {
