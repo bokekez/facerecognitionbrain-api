@@ -115,7 +115,7 @@ app.post('/register', (req, res) => {
 	// const { email, name, password } = req.body;
 	const email = req.body.email;
 	const name = req.body.name;
-	const password = req.body.password;
+	// const password = req.body.password;
 	const hash = bcrypt.hashSync(password);
 	// bcrypt.hash(password, null, null, function(err, hash) {
  //     	console.log(hash);
